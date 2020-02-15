@@ -1,5 +1,7 @@
 # RedditProject
 
+Worked through all 6 of the tutorial videos and added the functionality to sort by title when the points are equal.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
 ## Development server
