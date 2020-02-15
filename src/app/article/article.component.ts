@@ -8,21 +8,21 @@ import { Article } from './article.model';
 })
 export class ArticleComponent implements OnInit {
 
-  @Input() article:Article;
+  @Input() article: Article;
 
   constructor() {
     //this.article=new Article("Angular","http://angular.io",10);
-    
-   }
+
+  }
 
   ngOnInit() {
   }
 
-  voteUp():boolean {
+  voteUp(): boolean {
     this.article.voteUp();
     return false;
   }
-  voteDown():boolean {
+  voteDown(): boolean {
     this.article.voteDown();
     return false;
   }

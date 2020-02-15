@@ -31,7 +31,7 @@ export class AppComponent {
   sortedArticles(): Article[] {
     //return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);  //sorts by points value
 
-    //return this.articles.sort((a: Article, b: Article) => a.title.localeCompare(b.title)); //will sort by article name in alphabetical order
+    //return this.articles.sort((a: Article, b: Article) => a.title.localeCompare(b.title)); //sorts by article name in alphabetical order
 
     return this.articles.sort((a: Article, b: Article) => b.votes - a.votes || a.title.localeCompare(b.title));//sorts by points order and alphabetical order when points are equal
 
