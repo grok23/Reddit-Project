@@ -1,15 +1,15 @@
 <form>
   <fieldset class="form-group">
     <legend>Add a Link</legend>
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input name="title" class="form-control" placeholder="Enter link title" #newtitle>
-      </div>
-      <div class="form-group">
-        <label for="link">Link</label>
-        <input name="link" class="form-control" placeholder="Enter URL" #newlink>
-      </div>
-    <button (click)="addArticle(newtitle, newlink)">Submit Link</button>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input name="title" class="form-control" placeholder="Enter link title" #newtitle>
+    </div>
+    <div class="form-group">
+      <label for="link">Link</label>
+      <input name="link" class="form-control" placeholder="Enter URL" #newlink>
+    </div>
+    <button (click)="addArticle(newtitle, newlink)" class="btn btn-primary">Submit Link</button>
   </fieldset>
 </form>
 <app-article *ngFor="let article of articles" [article]='article'></app-article>
