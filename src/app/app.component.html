@@ -12,4 +12,4 @@
     <button (click)="addArticle(newtitle, newlink)">Submit Link</button>
   </fieldset>
 </form>
-<app-article></app-article>
+<app-article *ngFor="let article of articles" [article]='article'></app-article>
